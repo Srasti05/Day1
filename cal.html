@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="name1" placeholder="Enter your name">
+    <input type="text" name="" id="name2" placeholder="Enter his/her name">
+    <button onclick="cal()">Submit</button>
+    <h2 id="res">Result</h2>
+    <script>
+        function cal(){
+        var name1 = document.getElementById("name1").value;
+        var name2 = document.getElementById("name2").value;
+        var per = Math.floor(Math.random() *101);
+        var res = document.getElementById("res");
+        res.innerHTML = name1 + " and " + name2 + " have a compatibility of " + per + "%";
+    }
+    </script>
+    
+</body>
+</html>
